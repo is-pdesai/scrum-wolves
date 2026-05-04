@@ -33,39 +33,139 @@
   <h2>Size &amp; measurements</h2>
   <p>Size varies by geography — northern wolves are generally larger — but these are the standard physical benchmarks for a healthy adult.</p>
 
-  <!-- Real-photo size comparison: wolf at ~30in shoulder vs. 5'10" / 70in human => wolf height ≈ 43% of human height -->
-  <figure class="anatomy-figure" style="background: linear-gradient(180deg, #f3f7fa 0%, #e6eef4 100%); padding: 32px 24px 16px; border-radius: 8px; margin: 0 0 24px;">
-    <div style="display:flex; align-items:flex-end; justify-content:center; gap: 4%; min-height: 360px; position:relative;">
-      <!-- Wolf photo -->
-      <div style="position:relative; width: 46%; max-width: 460px;">
-        <img src="site/wolf-side.jpg" alt="Gray wolf side profile, photographed in the wild" style="width: 100%; display: block; border-radius: 4px;" />
-        <div style="position:absolute; left: 0; bottom: -20px; right: 0; height: 2px; background: #0a1a2a;"></div>
-      </div>
-      <!-- Human silhouette, scaled so head reaches ~2.3x wolf shoulder height -->
-      <div style="position:relative; flex-shrink: 0;">
-        <svg viewBox="0 0 60 200" width="60" height="320" preserveAspectRatio="xMidYMax meet" aria-label="Adult human, 5 feet 10 inches, for scale">
-          <g fill="#2a5a82">
-            <!-- head -->
-            <ellipse cx="30" cy="15" rx="9" ry="11"/>
-            <!-- neck -->
-            <rect x="27" y="24" width="6" height="6"/>
-            <!-- torso (shoulders to waist) -->
-            <path d="M14 30 Q 14 28 16 28 L 44 28 Q 46 28 46 30 L 44 88 Q 44 92 40 92 L 20 92 Q 16 92 16 88 Z"/>
-            <!-- arms -->
-            <path d="M14 32 Q 8 32 7 38 L 6 88 Q 6 94 10 94 L 14 94 Q 16 94 16 90 L 17 38 Z"/>
-            <path d="M46 32 Q 52 32 53 38 L 54 88 Q 54 94 50 94 L 46 94 Q 44 94 44 90 L 43 38 Z"/>
-            <!-- legs -->
-            <path d="M18 92 L 16 198 Q 16 200 18 200 L 28 200 Q 30 200 30 198 L 30 92 Z"/>
-            <path d="M30 92 L 30 198 Q 30 200 32 200 L 42 200 Q 44 200 44 198 L 42 92 Z"/>
-          </g>
-        </svg>
-        <div style="position:absolute; left: 0; right: 0; bottom: -20px; height: 2px; background: #0a1a2a;"></div>
-      </div>
-    </div>
-    <figcaption style="margin-top: 32px; padding-top: 12px; border-top: 1px solid #cdd9e2; display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink); text-align: center;">
-      <div><strong>HEIGHT</strong><br/>26–33 in at shoulder</div>
-      <div><strong>LENGTH</strong><br/>4.5–6.5 ft nose to tail</div>
-      <div><strong>FOR SCALE</strong><br/>5'10" human</div>
+  <!--
+    To-scale silhouette comparison. Drawing units = inches.
+    Adult human: 70 in tall, ~16 in wide at shoulders.
+    Adult gray wolf: 30 in shoulder height, ~65 in nose-to-tail-tip, ~38 in head-top to ground.
+    Both rendered in the same coordinate space → proportions are inherently accurate.
+    Ground line at y=80. Padding top to 0, ground stroke at y=80.
+  -->
+  <figure class="anatomy-figure" style="background: linear-gradient(180deg, #f3f7fa 0%, #e6eef4 100%); padding: 40px 24px 16px; border-radius: 8px; margin: 0 0 24px;">
+    <svg viewBox="0 0 200 92" width="100%" style="display:block; max-height: 460px;" aria-label="Size comparison: adult gray wolf next to a 5'10 human, drawn to scale">
+      <!-- Grid: faint horizontal foot markers (1ft = 12in) -->
+      <g stroke="#cdd9e2" stroke-width="0.15" stroke-dasharray="0.6 0.6">
+        <line x1="0" y1="68" x2="200" y2="68"/>
+        <line x1="0" y1="56" x2="200" y2="56"/>
+        <line x1="0" y1="44" x2="200" y2="44"/>
+        <line x1="0" y1="32" x2="200" y2="32"/>
+        <line x1="0" y1="20" x2="200" y2="20"/>
+      </g>
+      <!-- Foot labels on left -->
+      <g font-family="JetBrains Mono, monospace" font-size="2.4" fill="#7a8a98" text-anchor="end">
+        <text x="6" y="81">0</text>
+        <text x="6" y="69">1ft</text>
+        <text x="6" y="57">2ft</text>
+        <text x="6" y="45">3ft</text>
+        <text x="6" y="33">4ft</text>
+        <text x="6" y="21">5ft</text>
+        <text x="6" y="9">6ft</text>
+      </g>
+
+      <!-- Human silhouette: 70in tall, standing on ground line y=80. Head top at y=10. -->
+      <g fill="#1f3a52" transform="translate(160 10)">
+        <!-- head: ~9in tall -->
+        <ellipse cx="0" cy="4.5" rx="3.5" ry="4.5"/>
+        <!-- neck -->
+        <rect x="-1.5" y="9" width="3" height="2"/>
+        <!-- torso: shoulders to hips, ~25in -->
+        <path d="M-7 11 Q -8 11 -8 12 L -7.5 36 Q -7 38 -5 38 L 5 38 Q 7 38 7.5 36 L 8 12 Q 8 11 7 11 Z"/>
+        <!-- arms -->
+        <path d="M-8 12 Q -10 12 -10.5 14 L -11 36 Q -11 38 -9.5 38 L -8 38 Q -7 38 -7 36 Z"/>
+        <path d="M8 12 Q 10 12 10.5 14 L 11 36 Q 11 38 9.5 38 L 8 38 Q 7 38 7 36 Z"/>
+        <!-- legs: hip y=38 to feet y=70 (32in) -->
+        <path d="M-5 38 L -5.5 70 L -1 70 L -0.5 38 Z"/>
+        <path d="M0.5 38 L 1 70 L 5.5 70 L 5 38 Z"/>
+      </g>
+
+      <!-- Wolf silhouette: 30in shoulder, ~65in nose-tip to tail-tip, ~38in head-top to ground.
+           Standing with feet on y=80, body roughly centered around x=80. -->
+      <g fill="#1f3a52" transform="translate(40 42)">
+        <!-- Body: from front shoulders (left) to hindquarters (right). Anchored so feet are at y=38 (becomes y=80 with translate). -->
+        <!-- back & belly -->
+        <path d="
+          M 6 6
+          Q 4 4 8 2
+          L 16 0
+          L 30 -1
+          Q 50 -2 60 0
+          L 64 1
+          Q 66 3 64 5
+          L 60 8
+          Q 58 14 56 18
+          L 53 26
+          Q 52 28 50 28
+          L 45 28
+          Q 43 28 43 26
+          L 43 18
+          Q 35 18 22 18
+          L 22 26
+          Q 22 28 20 28
+          L 15 28
+          Q 13 28 13 26
+          L 11 18
+          Q 9 14 7 10
+          Z" />
+        <!-- Tail: bushy, hangs back and slightly down from rump -->
+        <path d="
+          M 64 2
+          Q 78 0 86 8
+          Q 88 11 84 12
+          Q 76 10 70 8
+          Q 66 6 64 6
+          Z"/>
+        <!-- Head: snout pointing left (forward). Top of head ~y=-6 relative to translate (so y=36 absolute = 38in tall total) -->
+        <path d="
+          M 6 6
+          Q 0 4 -4 2
+          Q -8 0 -10 -2
+          Q -12 -4 -10 -5
+          L -4 -6
+          Q 0 -8 4 -8
+          L 8 -8
+          Q 12 -8 14 -6
+          Q 16 -2 14 2
+          Q 12 4 10 5
+          Z"/>
+        <!-- Ear -->
+        <path d="M 8 -8 L 10 -12 L 13 -7 Z"/>
+        <!-- Eye -->
+        <circle cx="2" cy="-3" r="0.4" fill="#f3f7fa"/>
+      </g>
+
+      <!-- Ground line -->
+      <line x1="6" y1="80" x2="194" y2="80" stroke="#0a1a2a" stroke-width="0.4"/>
+
+      <!-- Dimension lines -->
+      <!-- Wolf shoulder height (30in = y from 80 to 50) -->
+      <g stroke="#2a5a82" stroke-width="0.25" fill="#2a5a82" font-family="JetBrains Mono, monospace" font-size="2.4">
+        <line x1="106" y1="50" x2="116" y2="50" stroke-dasharray="0.8 0.8"/>
+        <line x1="114" y1="50" x2="114" y2="80"/>
+        <polygon points="113,52 115,52 114,50"/>
+        <polygon points="113,78 115,78 114,80"/>
+        <text x="118" y="66">30 in</text>
+        <text x="118" y="69.5" font-size="1.8" fill="#7a8a98">shoulder</text>
+      </g>
+      <!-- Human height (70in = y from 80 to 10) -->
+      <g stroke="#2a5a82" stroke-width="0.25" fill="#2a5a82" font-family="JetBrains Mono, monospace" font-size="2.4">
+        <line x1="172" y1="10" x2="180" y2="10" stroke-dasharray="0.8 0.8"/>
+        <line x1="178" y1="10" x2="178" y2="80"/>
+        <polygon points="177,12 179,12 178,10"/>
+        <polygon points="177,78 179,78 178,80"/>
+        <text x="182" y="46">5'10"</text>
+        <text x="182" y="49.5" font-size="1.8" fill="#7a8a98">70 in</text>
+      </g>
+
+      <!-- Labels -->
+      <g font-family="Cinzel, serif" font-size="3.2" font-weight="700" fill="#0a1a2a" text-anchor="middle">
+        <text x="80" y="89">GRAY WOLF</text>
+        <text x="160" y="89">HUMAN</text>
+      </g>
+    </svg>
+
+    <figcaption style="margin-top: 16px; padding-top: 12px; border-top: 1px solid #cdd9e2; display:grid; grid-template-columns: repeat(3, 1fr); gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink); text-align: center;">
+      <div><strong>SHOULDER HEIGHT</strong><br/>26–33 in (≈ 2.5 ft)</div>
+      <div><strong>NOSE TO TAIL</strong><br/>4.5–6.5 ft total</div>
+      <div><strong>FOR SCALE</strong><br/>vs. 5'10" human</div>
     </figcaption>
   </figure>
 
