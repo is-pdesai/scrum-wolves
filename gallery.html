@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>SCRUM Wolves — Image Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <img src="site/logo.png" alt="SCRUM Wolves crest" />
+    <div class="brand-text">SCRUM WOLVES<small>AGILE LEADERSHIP · EST. 2026</small></div>
+  </div>
+</header>
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <a href="gallery.html" class="active">Image Gallery</a>
+  <a href="diet.html">Diet</a>
+  <a href="habitat.html">Habitat</a>
+  <a href="behavior.html">Behavior</a>
+  <a href="mating.html">Mating &amp; Reproduction</a>
+  <a href="anatomy.html">Anatomy &amp; Biology</a>
+  <a href="classification.html">Scientific Name</a>
+</nav>
+
+<main class="page">
+  <div class="page-eyebrow">02 · Image Gallery</div>
+  <h1 class="page-title">In their element.</h1>
+  <p class="page-lede">Six wolves, six moments. Pulled from the public domain — these are real photos from real wildlife archives, free for anyone to use.</p>
+
+  <p style="font-size:13px; color:var(--mute); margin-top:-24px; margin-bottom:32px;">All photos public domain via Wikimedia Commons (U.S. Fish &amp; Wildlife Service / National Park Service / contributor-released).</p>
+
+  <div class="gallery-grid">
+    <figure class="gallery-card" style="margin:0;">
+      <div class="img" style="aspect-ratio: 4/3;">
+        <img src="site/wolf-01.jpg" alt="Gray wolf standing in snow under fir branches" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <figcaption class="meta"><div class="cap">In the snow, under the firs</div><div class="alt">Canis lupus · USFWS · Public domain</div></figcaption>
+    </figure>
+
+    <figure class="gallery-card" style="margin:0;">
+      <div class="img" style="aspect-ratio: 4/3;">
+        <img src="site/wolf-02.jpg" alt="Gray wolf at rest, autumn background" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <figcaption class="meta"><div class="cap">Eye contact, no apologies</div><div class="alt">Canis lupus · USFWS · Public domain</div></figcaption>
+    </figure>
+
+    <figure class="gallery-card" style="margin:0;">
+      <div class="img" style="aspect-ratio: 4/3;">
+        <img src="site/wolf-03.jpg" alt="Mexican gray wolf running across dry grass" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <figcaption class="meta"><div class="cap">Mexican wolf, full stride</div><div class="alt">Canis lupus baileyi · USFWS · Public domain</div></figcaption>
+    </figure>
+
+    <figure class="gallery-card" style="margin:0;">
+      <div class="img" style="aspect-ratio: 4/3;">
+        <img src="site/wolf-04.jpg" alt="Gray wolf resting in dry grass" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <figcaption class="meta"><div class="cap">Resting between hunts</div><div class="alt">Endangered gray wolf · USFWS · Public domain</div></figcaption>
+    </figure>
+
+    <figure class="gallery-card" style="margin:0;">
+      <div class="img" style="aspect-ratio: 4/3;">
+        <img src="site/wolf-05.jpg" alt="Arctic wolf curled up in snow" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <figcaption class="meta"><div class="cap">Arctic wolf, curled in</div><div class="alt">Canis lupus arctos · Wikimedia Commons · Public domain</div></figcaption>
+    </figure>
+
+    <figure class="gallery-card" style="margin:0;">
+      <div class="img" style="aspect-ratio: 4/3;">
+        <img src="site/wolf-06.jpg" alt="Black gray wolf standing on a Yellowstone meadow" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <figcaption class="meta"><div class="cap">Black coat, Yellowstone meadow</div><div class="alt">Canis lupus · Wikimedia Commons · Public domain</div></figcaption>
+    </figure>
+  </div>
+
+  <h2>Submit your wolf photos</h2>
+  <p>Got a wolf shot you're proud of? Send it in. We feature reader submissions in this gallery with full credit. Real photos only — please, no AI generations.</p>
+
+  <form class="submit-box" onsubmit="event.preventDefault(); this.querySelector('.thanks').style.display='block'; this.querySelector('button').textContent='Sent!'; this.querySelector('button').disabled=true;">
+    <label for="name">Your name</label>
+    <input id="name" type="text" placeholder="Jane Doe" required />
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="jane@email.com" required />
+    <label for="caption">Photo caption</label>
+    <input id="caption" type="text" placeholder="Where, when, what was happening" required />
+    <label for="photo">Photo file</label>
+    <input id="photo" type="file" accept="image/*" />
+    <label for="notes">Story (optional)</label>
+    <textarea id="notes" rows="4" placeholder="Tell us how you got the shot."></textarea>
+    <button type="submit">Submit photo</button>
+    <p class="thanks" style="display:none; color:var(--moss); margin-top:12px; font-weight:600;">Thanks — we'll be in touch within a week.</p>
+  </form>
+</main>
+
+<footer class="site-footer">© 2026 SCRUM WOLVES · A WOLF FAN SITE<small>BUILT BY THE PACK</small></footer>
+</body>
+</html>
