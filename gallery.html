@@ -80,20 +80,15 @@
   <h2>Submit your wolf photos</h2>
   <p>Got a wolf shot you're proud of? Send it in. We feature reader submissions in this gallery with full credit. Real photos only — please, no AI generations.</p>
 
-  <form class="submit-box" onsubmit="event.preventDefault(); this.querySelector('.thanks').style.display='block'; this.querySelector('button').textContent='Sent!'; this.querySelector('button').disabled=true;">
-    <label for="name">Your name</label>
-    <input id="name" type="text" placeholder="Jane Doe" required />
-    <label for="email">Email</label>
-    <input id="email" type="email" placeholder="jane@email.com" required />
-    <label for="caption">Photo caption</label>
-    <input id="caption" type="text" placeholder="Where, when, what was happening" required />
-    <label for="photo">Photo file</label>
-    <input id="photo" type="file" accept="image/*" />
-    <label for="notes">Story (optional)</label>
-    <textarea id="notes" rows="4" placeholder="Tell us how you got the shot."></textarea>
-    <button type="submit">Submit photo</button>
-    <p class="thanks" style="display:none; color:var(--moss); margin-top:12px; font-weight:600;">Thanks — we'll be in touch within a week.</p>
-  </form>
+  <div class="submit-box" style="text-align: center; padding: 40px 28px;">
+    <p style="margin: 0 0 8px; font-family: 'Cinzel', serif; font-size: 22px; font-weight: 700; color: var(--moss-2); letter-spacing: 0.05em;">Send us your shot</p>
+    <p style="margin: 0 0 24px; color: var(--ink-soft); max-width: 460px; margin-left: auto; margin-right: auto;">Our submission form is hosted on Google Forms. You'll need to be signed into a Google account to upload your photo.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_9_eJCsAr5QE758inTD0bhwZAXyFqKfIiaRmvwnBfprN2VA/viewform" target="_blank" rel="noopener noreferrer"
+       style="display: inline-block; background: var(--ember); color: var(--paper); padding: 14px 32px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; font-size: 13px; border: none; text-decoration: none; border-bottom: none;">
+      Open submission form &nbsp;↗
+    </a>
+    <p style="margin: 20px 0 0; font-size: 13px; color: var(--mute);">Opens in a new tab.</p>
+  </div>
 </main>
 
 <footer class="site-footer">© 2026 SCRUM WOLVES · A WOLF FAN SITE<small>BUILT BY THE PACK</small></footer>
