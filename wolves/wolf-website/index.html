@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wild Nation — Wolf World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="nav-brand">
+    <span>🐺</span>
+    <span>Wolf World</span>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home"           class="nav-link">Home</a></li>
+    <li><a href="#gallery"        class="nav-link">Gallery</a></li>
+    <li><a href="#diet"           class="nav-link">Diet</a></li>
+    <li><a href="#mating"         class="nav-link">Mating &amp; Reprod.</a></li>
+    <li><a href="#habitat"        class="nav-link">Habitat</a></li>
+    <li><a href="#behavior"       class="nav-link">Behavior</a></li>
+    <li><a href="#communication"  class="nav-link">Communication</a></li>
+    <li><a href="#anatomy"        class="nav-link">Anatomy &amp; Biology</a></li>
+    <li><a href="#pop-culture"    class="nav-link">Pop Culture</a></li>
+    <li><a href="#facts"          class="nav-link">Fun Facts</a></li>
+    <li><a href="#classification" class="nav-link">Classification</a></li>
+    <li><a href="file:///Users/lsondhi/zoo-boilerplate/index.html" class="nav-link zoo-back">← Wild Nation</a></li>
+  </ul>
+</nav>
+
+<!-- ===================================================
+     HOME
+=================================================== -->
+<section id="home" class="page-section home-section">
+  <div class="container">
+    <div class="hero-content">
+      <span class="zoo-tag">An exhibit of</span>
+      <div class="zoo-name">Wild Nation</div>
+      <div class="badge">🐺 Wolf World &middot; Found across the Northern Hemisphere</div>
+      <h1>A field guide to <em>Canis lupus</em>, the gray wolf — its pack, its territory, its howl.</h1>
+      <p class="hero-sub">
+        Apex predators that hunt in coordinated packs, communicate across miles of forest, and raise their pups cooperatively.
+        Welcome to the wolf habitat at Wild Nation Zoo.
+      </p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn">Start Exploring 🚀</a>
+        <a href="file:///Users/lsondhi/zoo-boilerplate/index.html" class="btn btn-secondary">← Back to Wild Nation</a>
+      </div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-num" data-target="30">0</div>
+        <div class="stat-unit">+ subspecies</div>
+        <div class="stat-label">of <em>Canis lupus</em></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="38">0</div>
+        <div class="stat-unit">mph</div>
+        <div class="stat-label">Top sprinting speed</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="10">0</div>
+        <div class="stat-unit">miles</div>
+        <div class="stat-label">Howl audible range</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="1500">0</div>
+        <div class="stat-unit">psi</div>
+        <div class="stat-label">Bite force</div>
+      </div>
+    </div>
+
+    <div class="fact-banner">
+      <span class="fact-label">⚡ DID YOU KNOW?</span>
+      <span class="fact-text" id="factText">Every domestic dog — Chihuahua to Great Dane — is a subspecies of the gray wolf!</span>
+    </div>
+
+    <!-- Quick-nav cards -->
+    <div class="quicknav">
+      <a href="#diet"           class="qn-card"><div class="qn-icon">🦌</div><div>Diet &amp; Hunting</div></a>
+      <a href="#mating"         class="qn-card"><div class="qn-icon">🐾</div><div>Mating &amp; Pups</div></a>
+      <a href="#habitat"        class="qn-card"><div class="qn-icon">🌲</div><div>Where They Live</div></a>
+      <a href="#behavior"       class="qn-card"><div class="qn-icon">🐺</div><div>Behavior</div></a>
+      <a href="#communication"  class="qn-card"><div class="qn-icon">📢</div><div>Communication</div></a>
+      <a href="#anatomy"        class="qn-card"><div class="qn-icon">🔬</div><div>Anatomy</div></a>
+      <a href="#pop-culture"    class="qn-card"><div class="qn-icon">🎬</div><div>Pop Culture</div></a>
+      <a href="#facts"          class="qn-card"><div class="qn-icon">⚡</div><div>Fun Facts</div></a>
+      <a href="#classification" class="qn-card"><div class="qn-icon">🔭</div><div>Classification</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     IMAGE GALLERY
+=================================================== -->
+<section id="gallery" class="page-section alt-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🖼️ Image Gallery</h2>
+      <p>Six wolves, six moments — pulled from public-domain wildlife archives</p>
+    </div>
+    <div class="gallery-grid">
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="🐺" data-sci="Canis lupus" data-region="North America" style="--grad:linear-gradient(145deg,#0d1f2b,#1b3a5e)">
+          <img src="images/wolf-01.jpg"
+               alt="Gray wolf standing in snow under fir branches"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Canis lupus</span></div>
+        </div>
+        <div class="card-body">
+          <h3>In the Snow, Under the Firs</h3>
+          <p>A gray wolf in fresh winter coat. Their double-layered fur traps body heat at -40 °F.</p>
+          <span class="tag">USFWS · Public domain</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="👁️" data-sci="Canis lupus" data-region="North America" style="--grad:linear-gradient(145deg,#2b1f0d,#5e4b1b)">
+          <img src="images/wolf-02.jpg"
+               alt="Gray wolf at rest, autumn background"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Canis lupus</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Eye Contact, No Apologies</h3>
+          <p>Direct gaze in the wild signals confidence. Wolves recognize individuals by face and voice.</p>
+          <span class="tag">USFWS · Public domain</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="🏜️" data-sci="Canis lupus baileyi" data-region="Mexico / SW USA" style="--grad:linear-gradient(145deg,#3d2200,#7b4a00)">
+          <img src="images/wolf-03.jpg"
+               alt="Mexican gray wolf running across dry grass"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Canis lupus baileyi</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Mexican Wolf, Full Stride</h3>
+          <p>The "lobo" — smallest North American subspecies. Recovering in Arizona and New Mexico.</p>
+          <span class="tag">USFWS · Public domain</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="🌾" data-sci="Canis lupus" data-region="USA" style="--grad:linear-gradient(145deg,#1a2b0d,#3a5e1b)">
+          <img src="images/wolf-04.jpg"
+               alt="Gray wolf resting in dry grass"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Canis lupus</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Resting Between Hunts</h3>
+          <p>Wolves sleep 8–10 hours a day in short bouts — there's almost always a sentry awake.</p>
+          <span class="tag">USFWS · Public domain</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="❄️" data-sci="Canis lupus arctos" data-region="High Arctic" style="--grad:linear-gradient(145deg,#0d1f2b,#1f4a6e)">
+          <img src="images/wolf-05.jpg"
+               alt="Arctic wolf curled up in snow"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Canis lupus arctos</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Arctic Wolf, Curled In</h3>
+          <p>White-coated subspecies of the Canadian high Arctic and Greenland. Tail tucks over the nose for warmth.</p>
+          <span class="tag">Wikimedia · Public domain</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="🌑" data-sci="Canis lupus" data-region="Yellowstone" style="--grad:linear-gradient(145deg,#0d0d0d,#3a3a3a)">
+          <img src="images/wolf-06.jpg"
+               alt="Black gray wolf standing on a Yellowstone meadow"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Canis lupus</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Black Coat, Yellowstone Meadow</h3>
+          <p>Black coloration in North American wolves traces to a single gene introduced by ancient dog ancestors.</p>
+          <span class="tag">Wikimedia · Public domain</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="fact-box">
+      <span class="fact-box-icon">📷</span>
+      <div><strong>Got a wolf shot you're proud of?</strong> Send it in via our <a href="https://docs.google.com/forms/d/e/1FAIpQLSe_9_eJCsAr5QE758inTD0bhwZAXyFqKfIiaRmvwnBfprN2VA/viewform" target="_blank" rel="noopener noreferrer" style="color:var(--gold); text-decoration:underline;">Google Form submission</a> — we feature reader photos in this gallery with full credit. Real photos only, please.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     DIET
+=================================================== -->
+<section id="diet" class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🦌 Diet &amp; Hunting</h2>
+      <p>Built to hunt big game — wolves are obligate carnivores, pure meat-eaters</p>
+    </div>
+
+    <h3 class="sub-heading">What's on the Menu</h3>
+    <div class="food-grid">
+      <div class="food-card gold-card">
+        <div class="food-icon">🦌</div>
+        <h4>Elk &amp; Deer</h4>
+        <p>~78% of the average wolf's diet. The bulk of the pack's calories come from hoofed mammals far larger than any single wolf.</p>
+      </div>
+      <div class="food-card">
+        <div class="food-icon">🫎</div>
+        <h4>Moose &amp; Bison</h4>
+        <p>~14%. Tackled only by larger packs working in concert — a 1,000 lb prey animal demands teamwork.</p>
+      </div>
+      <div class="food-card">
+        <div class="food-icon">🦫</div>
+        <h4>Beaver &amp; Hare</h4>
+        <p>~6%. Smaller mammals fill in between big kills, especially in summer when ungulates are harder to catch.</p>
+      </div>
+      <div class="food-card">
+        <div class="food-icon">🐟</div>
+        <h4>Fish &amp; Berries</h4>
+        <p>~2%. Coastal wolves in British Columbia even fish for salmon — and some packs eat blueberries seasonally.</p>
+      </div>
+      <div class="food-card">
+        <div class="food-icon">🦴</div>
+        <h4>Scavenged Carrion</h4>
+        <p>Wolves cache surplus meat and return to it — a working freezer in the snow.</p>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">How a Hunt Works</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>👃 Locate</h4>
+          <p>Scent and tracks. With ~200 million olfactory receptors — about 100× a human's — wolves can smell prey from over a mile downwind.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>🌲 Stalk</h4>
+          <p>The pack approaches against the wind, fanning out to surround the herd without being seen.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>🏃 Test</h4>
+          <p>Provoke a chase to identify weak, sick, or young animals — the only realistic targets. Hunt success is just <strong>~14%</strong>.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h4>💨 Pursue</h4>
+          <p>Bursts of 35+ mph; sustained 5 mph for hours. Wolves win by endurance, not raw speed.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h4>🦷 Take Down</h4>
+          <p>Larger prey is hamstrung first, then suffocated by a throat or muzzle hold. Bite force tops <strong>~1,500 psi</strong>.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <h4>🍽️ Share</h4>
+          <p>Breeding pair eats first; then pups; then yearlings. A single wolf can put down 22 lb at one sitting.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <span class="fact-box-icon">⚡</span>
+      <div><strong>Feast or Famine!</strong> A wolf averages 5–7 lb of meat per day across the year, but can fast for up to <em>14 days</em> between kills. Their metabolism is built for boom-and-bust like a lion's, not a dog's.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     MATING & REPRODUCTION
+=================================================== -->
+<section id="mating" class="page-section alt-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🐾 Mating &amp; Reproduction</h2>
+      <p>One pair, one litter, one pack — wolves mate for life</p>
+    </div>
+    <div class="cards-grid-3">
+      <div class="info-card">
+        <div class="card-icon">💑</div>
+        <h3>Finding a Mate</h3>
+        <p>Most young wolves leave their birth pack between ages 1 and 3 to find a mate — sometimes traveling hundreds of miles. Sexual maturity hits around <strong>2 years old</strong>.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">📅</div>
+        <h3>Mating Season</h3>
+        <p>Late January through March, depending on latitude. Pair bonds are typically lifelong — wolves only re-pair if a mate dies.</p>
+      </div>
+      <div class="info-card gold-card">
+        <div class="card-icon">👑</div>
+        <h3>One Breeding Pair ⭐</h3>
+        <p>In a typical pack, <strong>only the breeding pair</strong> reproduces. The "alpha pair" is just mom and dad — the pack is a cooperative family, not a hierarchy of fighters.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">⏱️</div>
+        <h3>Gestation</h3>
+        <p>Roughly <strong>62–63 days</strong> — about the same as a domestic dog. Pups are born blind, deaf, and weighing about 1 lb.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🐕</div>
+        <h3>Litter Size</h3>
+        <p>A typical litter is <strong>4 to 6 pups</strong>, though 1–12 have been recorded. Litter size scales with prey availability — lean territory means smaller litters.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🏠</div>
+        <h3>The Den</h3>
+        <p>The breeding female digs a den into a hillside or stream bank — sometimes 6–14 ft deep. Pups stay there for the first 8 weeks, nursing.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🐺</div>
+        <h3>Rendezvous Sites</h3>
+        <p>Once mobile (around 8 weeks), pups are moved to a clearing where they stay while adults hunt. By fall they travel with the pack and start joining hunts.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">👨‍👩‍👧‍👦</div>
+        <h3>The Whole Pack Helps</h3>
+        <p>Older siblings babysit, regurgitate food on demand, and intervene in pup squabbles. Wolves are one of the most cooperative breeders in the mammal world.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">📈</div>
+        <h3>Pup Survival</h3>
+        <p>Only about <strong>half</strong> of pups survive their first year — they fall to disease, starvation, predation, and accident. Cooperative care exists to push that number higher.</p>
+      </div>
+    </div>
+    <div class="fact-box">
+      <span class="fact-box-icon">🤯</span>
+      <div><strong>Mind-Blowing!</strong> Some offspring never leave — they stay with the natal pack for life as helpers. This is why a pack often has multiple generations in it, and why "pack" is just another word for <em>family</em>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     HABITAT
+=================================================== -->
+<section id="habitat" class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🌍 Habitat Info</h2>
+      <p>Found across the Northern Hemisphere — wherever there's wild prey and room to roam</p>
+    </div>
+
+    <h3 class="sub-heading">Regions of the World</h3>
+    <div class="regions-grid">
+      <div class="region-card">
+        <div class="region-icon">🌎</div>
+        <h3>North America</h3>
+        <p>Canada, Alaska, the northern Lower 48, Mexico, Greenland</p>
+        <p class="region-note"><em>Largest contiguous wolf range left on Earth</em></p>
+        <div class="env-tags">
+          <span class="tag">🌲 Boreal forest</span>
+          <span class="tag">🏔️ Rockies</span>
+          <span class="tag">🏜️ Tundra</span>
+        </div>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">🌍</div>
+        <h3>Europe</h3>
+        <p>Scandinavia, Carpathians, Balkans, Iberia</p>
+        <p class="region-note"><em>Recovering populations after centuries of persecution</em></p>
+        <div class="env-tags">
+          <span class="tag">🌳 Temperate forest</span>
+          <span class="tag">⛰️ Mountains</span>
+          <span class="tag">🌿 Mediterranean scrub</span>
+        </div>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">🌏</div>
+        <h3>Asia</h3>
+        <p>Russia, Mongolia, the Indian subcontinent, the Middle East</p>
+        <p class="region-note"><em>Eurasian, Indian, and Tibetan wolves</em></p>
+        <div class="env-tags">
+          <span class="tag">❄️ Steppe</span>
+          <span class="tag">🏔️ Himalaya</span>
+          <span class="tag">🏜️ Arid plains</span>
+        </div>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">🌐</div>
+        <h3>Australia (sort of)</h3>
+        <p>Dingoes, sometimes classed as <em>Canis lupus dingo</em></p>
+        <p class="region-note"><em>The only Southern Hemisphere wolf-like canid</em></p>
+        <div class="env-tags">
+          <span class="tag">🌵 Outback</span>
+          <span class="tag">🌾 Grassland</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Types of Environments</h3>
+    <div class="env-list">
+      <div class="env-item">
+        <span class="env-icon">🌲</span>
+        <div>
+          <h4>Boreal &amp; Temperate Forest</h4>
+          <p>The classic wolf landscape — dense cover, large ungulate populations, and territory enough for a pack to disappear into.</p>
+        </div>
+      </div>
+      <div class="env-item">
+        <span class="env-icon">🏔️</span>
+        <div>
+          <h4>Mountain &amp; Alpine</h4>
+          <p>From the Rockies to the Carpathians, wolves thrive at altitude. Snowshoe-like paws spread their weight on snow.</p>
+        </div>
+      </div>
+      <div class="env-item">
+        <span class="env-icon">🌾</span>
+        <div>
+          <h4>Prairie &amp; Steppe</h4>
+          <p>Open country wolves run down prey across enormous distances. Pack territories here can exceed <strong>1,000 square miles</strong>.</p>
+        </div>
+      </div>
+      <div class="env-item">
+        <span class="env-icon">❄️</span>
+        <div>
+          <h4>Tundra &amp; Arctic Ice</h4>
+          <p>Arctic wolves follow caribou herds across the high Arctic. The only major terrestrial biome wolves avoid is true tropical rainforest.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">What Wolves Need</h3>
+    <div class="cards-grid-3">
+      <div class="info-card">
+        <div class="card-icon">🦌</div>
+        <h3>Large Wild Prey</h3>
+        <p>Enough deer, elk, moose, or caribou to feed a pack year-round.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🗺️</div>
+        <h3>Space</h3>
+        <p>Pack territories run from <strong>50 sq mi</strong> in prey-rich forest to over <strong>1,000 sq mi</strong> in sparse tundra.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🤫</div>
+        <h3>Distance From People</h3>
+        <p>Wolves tolerate roads and farms surprisingly well — but they need somewhere quiet to den.</p>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <span class="fact-box-icon">🏠</span>
+      <div><strong>Home Base!</strong> Outside denning season wolves don't have a "home" — the pack moves through its territory, sleeping wherever the day ends. The den is used only ~8 weeks per year, while pups are still helpless.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     BEHAVIOR
+=================================================== -->
+<section id="behavior" class="page-section alt-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🐺 Behavior</h2>
+      <p>Almost everything a wolf does is a coordinated team effort</p>
+    </div>
+    <div class="behavior-grid">
+      <div class="beh-card">
+        <div class="beh-icon">🧑‍🤝‍🧑</div>
+        <h3>Cooperative Hunting</h3>
+        <p>A pack covers 10–30 miles a day looking for prey. Different wolves take different roles — some hold position, some chase, some cut off escape.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">📣</div>
+        <h3>The Howl</h3>
+        <p>Audible up to <strong>10 miles</strong> in open country. Howls rally the pack, advertise territory, and locate separated members. Each wolf has a distinct vocal signature.</p>
+      </div>
+      <div class="beh-card gold-card">
+        <div class="beh-icon">🏞️</div>
+        <h3>Territory ⭐</h3>
+        <p>A pack patrols its boundaries, scent-marking with urine and scat every few hundred meters. The howl tells anyone within 10 miles: <em>this ground is ours.</em></p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🌅</div>
+        <h3>Activity Patterns</h3>
+        <p>Wolves are <strong>crepuscular</strong> — most active at dawn and dusk — but they nap and rest throughout the day and often hunt at night.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">😴</div>
+        <h3>Sleeping Habits</h3>
+        <p>8–10 hrs a day in 2–4 hr bouts. They sleep with nose tucked under the tail, conserving heat. One wolf is usually awake — almost always a sentry.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🎮</div>
+        <h3>Play &amp; Reconciliation</h3>
+        <p>Adult wolves play — bowing, chasing, tug-of-war with bones. After conflict, they nuzzle, lick muzzles, and lay together to repair relationships.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🛡️</div>
+        <h3>Self-Defense</h3>
+        <p>Few natural predators threaten adult wolves. Main risks: rival packs, large bears at kills, and humans. The first defense against humans is usually to leave.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🚶</div>
+        <h3>Long-Distance Dispersal</h3>
+        <p>Young wolves leave their birth pack at 1–3 years to find a mate and start their own — sometimes traveling hundreds of miles to do it.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🥶</div>
+        <h3>Caching Surplus</h3>
+        <p>Surplus meat is buried for later — a working freezer. In summer, wolves dig shallow cooling pits in moist soil. In deep cold, they pile together for warmth.</p>
+      </div>
+    </div>
+    <div class="fact-box">
+      <span class="fact-box-icon">👨‍👩‍👧</span>
+      <div><strong>Pack = Family.</strong> A wolf pack is essentially an extended family — usually a breeding pair, their pups of the year, and one or two older offspring who haven't yet dispersed. It is not a hierarchy of fighters.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     COMMUNICATION
+=================================================== -->
+<section id="communication" class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>📢 Communication</h2>
+      <p>A language built for the wilderness — sound, body, and scent</p>
+    </div>
+
+    <h3 class="sub-heading">Four Channels of Wolf Talk</h3>
+    <div class="cards-grid-3">
+      <div class="info-card">
+        <div class="card-icon">🎤</div>
+        <h3>1. Vocal</h3>
+        <p><strong>Howls</strong> rally and locate. <strong>Barks &amp; yips</strong> alarm at close range. <strong>Growls</strong> assert status. <strong>Whimpers</strong> signal submission and greeting.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🦴</div>
+        <h3>2. Body Language</h3>
+        <p>Tail height, ear position, and body angle convey rank, mood, and intent without a sound. Direct stare = challenge. Averted gaze = deference.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">👃</div>
+        <h3>3. Scent</h3>
+        <p>Urine, feces, and glandular secretions communicate <strong>who passed through, when, their reproductive status, and whether the territory is claimed</strong>.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🤝</div>
+        <h3>4. Touch</h3>
+        <p>Nuzzling, licking, play-biting, and physical contact during rest reinforce social bonds. Pups learn the rules through touch with adults.</p>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">The Howl, In Detail</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>🎵 Structured Sound</h4>
+          <p>A howl has measurable features: pitch, duration, modulation, and harmonic structure. Researchers have identified <strong>at least 21 distinct howl types</strong>.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>🔁 Contagious</h4>
+          <p>One wolf starts; the rest of the pack joins in, each on a slightly different note. The harmonic mismatch is intentional — it makes the pack sound larger than it is.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>🆔 Individual Signatures</h4>
+          <p>Pack members recognize each other by voice alone. A separated wolf can find its family across miles of forest by ear.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Across Species</h3>
+    <div class="behavior-grid">
+      <div class="beh-card">
+        <div class="beh-icon">🦌</div>
+        <h3>Wolves to Prey</h3>
+        <p>A wolf testing a herd watches for a limp, a hesitation, a young straggler. The prey signals fitness through how it stands its ground. Most encounters end without contact.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🐻</div>
+        <h3>Wolves to Rivals</h3>
+        <p>Wolves displace coyotes, cougars, and bears from kills using growls, postural threats, and pack numbers. Cougars almost always retreat; bears occasionally hold.</p>
+      </div>
+      <div class="beh-card gold-card">
+        <div class="beh-icon">🐦‍⬛</div>
+        <h3>Wolves &amp; Ravens ⭐</h3>
+        <p>Ravens follow wolf packs to scavenge from kills, and sometimes lead wolves to carrion they can't open themselves. One of the most documented inter-species working relationships in the wild.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🧍</div>
+        <h3>Wolves to Humans</h3>
+        <p>Wild wolves overwhelmingly avoid humans. Captive and habituated wolves can read human pointing gestures — the same skill domestic dogs evolved over millennia.</p>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <span class="fact-box-icon">📡</span>
+      <div><strong>Why this matters for SCRUM.</strong> If you've ever wondered how a small team holds complex work together without constant meetings, the wolf model is instructive: <em>signal often, signal across channels, and trust the pack to read the room</em>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     ANATOMY & BIOLOGY
+=================================================== -->
+<section id="anatomy" class="page-section alt-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🔬 Anatomy &amp; Biology</h2>
+      <p>What's inside and outside a wolf — and how it all works</p>
+    </div>
+
+    <!-- Visual Wolf Diagram -->
+    <div class="snake-diagram-box">
+      <div class="diagram-label left">
+        <strong>Head</strong><br>
+        <small>200M scent receptors,<br>42 teeth, 1,500 psi bite</small>
+      </div>
+      <div class="snake-art">
+        <span class="snake-emoji">🐺</span>
+        <div class="snake-line">
+          <div class="snake-seg" title="Powerful chest and large heart for endurance">CHEST / HEART</div>
+          <div class="snake-seg" title="Long body, double-layered fur">TORSO</div>
+          <div class="snake-seg tail-seg" title="Bushy tail with scent gland">TAIL</div>
+        </div>
+      </div>
+      <div class="diagram-label right">
+        <strong>Tail</strong><br>
+        <small>Bushy; covers face when sleeping;<br>has a precaudal scent gland</small>
+      </div>
+    </div>
+
+    <h3 class="sub-heading">Size at a Glance</h3>
+    <div class="taxonomy-wrap">
+      <div class="taxonomy-table">
+        <div class="tax-row">
+          <div class="tax-rank">Shoulder height</div>
+          <div class="tax-val">26–33 in</div>
+          <div class="tax-desc">66–84 cm — about 2.5 ft tall at the back</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Total length</div>
+          <div class="tax-val">4.5–6.5 ft</div>
+          <div class="tax-desc">1.4–2 m, nose to tail tip</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Weight (males)</div>
+          <div class="tax-val">70–145 lb</div>
+          <div class="tax-desc">32–66 kg — ~20% larger than females</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Weight (females)</div>
+          <div class="tax-val">60–100 lb</div>
+          <div class="tax-desc">27–45 kg</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Top speed</div>
+          <div class="tax-val">~38 mph</div>
+          <div class="tax-desc">61 km/h — short bursts only</div>
+        </div>
+        <div class="tax-row highlight-row">
+          <div class="tax-rank">Cruising speed</div>
+          <div class="tax-val">~5 mph</div>
+          <div class="tax-desc">Sustainable for hours — the real superpower</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Key Adaptations</h3>
+    <div class="anatomy-grid">
+      <div class="anatomy-card">
+        <div class="a-icon">🐾</div>
+        <h3>Digitigrade Gait</h3>
+        <p>Wolves walk and run on their toes — not their whole foot — which increases effective leg length and top speed.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">❄️</div>
+        <h3>Snowshoe Paws</h3>
+        <p>Paws up to 5 inches long spread apart to distribute weight on snow and soft terrain.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">🦷</div>
+        <h3>42 Teeth, 1,500 psi</h3>
+        <p>Four 2-inch canines built for grabbing and holding large prey. Bite force can crush a femur.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">🧥</div>
+        <h3>Double-Layer Fur</h3>
+        <p>Dense undercoat insulates; long guard hairs shed moisture and protect from the elements.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">👃</div>
+        <h3>~200M Scent Receptors</h3>
+        <p>About 100× a human's. Wolves can scent prey over a mile downwind.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">🌑</div>
+        <h3>Night Vision</h3>
+        <p>A reflective layer behind the retina — the <em>tapetum lucidum</em> — gives them superior low-light vision.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">❤️</div>
+        <h3>Big Heart, Big Lungs</h3>
+        <p>Large heart relative to body size delivers oxygen rapidly to working muscles. Built for hours of sustained aerobic activity.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">😮‍💨</div>
+        <h3>Pant Cooling</h3>
+        <p>No body sweat glands — wolves <strong>pant</strong>, evaporating moisture from tongue and lungs to stay cool during hunts.</p>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Lifespan</h3>
+    <div class="cards-grid-3">
+      <div class="info-card">
+        <div class="card-icon">🌲</div>
+        <h3>Wild</h3>
+        <p><strong>6–8 years</strong>. Territory disputes, injury, and food scarcity all weigh on a wild wolf's lifespan.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🏥</div>
+        <h3>Captivity</h3>
+        <p><strong>12–15 years</strong>. Guaranteed nutrition and veterinary care nearly double the average.</p>
+      </div>
+      <div class="info-card gold-card">
+        <div class="card-icon">🧬</div>
+        <h3>Did You Know?</h3>
+        <p>Wolves have a specialized <strong>precaudal scent gland</strong> on the top of their tail, used for individual identification and pack-marking. Your dog has one too.</p>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <span class="fact-box-icon">🏃</span>
+      <div><strong>Built to Run!</strong> Wolves are <em>cursorial</em> predators — biologically designed to cover ground. A pack tracking a wounded moose may travel <strong>30 miles in a single night</strong>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     POP CULTURE
+=================================================== -->
+<section id="pop-culture" class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🎬 Wolves in Pop Culture</h2>
+      <p>The wolf has always been a story — and the storytelling has had real-world consequences</p>
+    </div>
+
+    <h3 class="sub-heading">Movies</h3>
+    <div class="species-grid">
+      <div class="species-card">
+        <div class="sp-name">Dances with Wolves</div>
+        <div class="sp-sci">dir. Kevin Costner · 1990</div>
+        <div class="sp-fact">"Two Socks," a lone wolf, befriends a frontier soldier. Sympathetic but romanticized — real lone wolves are usually starving, not lonely.</div>
+        <div class="sp-region">🎬 Film</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">The Grey</div>
+        <div class="sp-sci">dir. Joe Carnahan · 2011</div>
+        <div class="sp-fact">Liam Neeson vs. a hyper-aggressive Alaskan pack. Spectacularly inaccurate — real wolves rarely attack humans.</div>
+        <div class="sp-region">🎬 Film</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Wolfwalkers</div>
+        <div class="sp-sci">Cartoon Saloon · 2020</div>
+        <div class="sp-fact">Animated film grounded in Irish folklore. One of the rare sympathetic theatrical portrayals of the wolf.</div>
+        <div class="sp-region">🎨 Animation</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">The Twilight Saga</div>
+        <div class="sp-sci">based on Stephenie Meyer · 2008–12</div>
+        <div class="sp-fact">Werewolves as romantic anti-heroes. Cemented "alpha wolf" language in pop vocabulary — a term researchers have since formally retracted.</div>
+        <div class="sp-region">🎬 Franchise</div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Books</h3>
+    <div class="species-grid">
+      <div class="species-card">
+        <div class="sp-name">Never Cry Wolf</div>
+        <div class="sp-sci">Farley Mowat · 1963</div>
+        <div class="sp-fact">The book that began rehabilitating the wolf's public image. Loosely based on Mowat's time in the Canadian Arctic.</div>
+        <div class="sp-region">📖 Memoir</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">The Call of the Wild</div>
+        <div class="sp-sci">Jack London · 1903</div>
+        <div class="sp-fact">Wolf-dogs as protagonists. Hugely influential — and rife with anthropomorphism. Paired with <em>White Fang</em> (1906).</div>
+        <div class="sp-region">📖 Novel</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Of Wolves and Men</div>
+        <div class="sp-sci">Barry Lopez · 1978</div>
+        <div class="sp-fact">National Book Award winner. The canonical work on the wolf's cultural history.</div>
+        <div class="sp-region">📖 Nonfiction</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">American Wolf</div>
+        <div class="sp-sci">Nate Blakeslee · 2017</div>
+        <div class="sp-fact">The true story of O-Six, a famous Yellowstone wolf, and the politics of reintroduction in the American West.</div>
+        <div class="sp-region">📖 Reportage</div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Documentaries</h3>
+    <div class="species-grid">
+      <div class="species-card">
+        <div class="sp-name">Wolves: A Legend Returns to Yellowstone</div>
+        <div class="sp-sci">PBS / National Geographic · 1995</div>
+        <div class="sp-fact">The definitive document of the 1995 Yellowstone reintroduction — the inflection point of wolf recovery.</div>
+        <div class="sp-region">🎥 Doc</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">The Rise of Black Wolf</div>
+        <div class="sp-sci">National Geographic · 2010</div>
+        <div class="sp-fact">Long-form portrait of a single Yellowstone wolf — a counter to the genre's tendency to flatten individuals into "the pack."</div>
+        <div class="sp-region">🎥 Doc</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Living with Wolves</div>
+        <div class="sp-sci">Jim &amp; Jamie Dutcher · 2010s</div>
+        <div class="sp-fact">Six years embedded with a pack in Idaho. Widely cited for shifting the cultural conversation about wolf intelligence.</div>
+        <div class="sp-region">🎥 Field study</div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Mythology &amp; Folklore</h3>
+    <div class="species-grid">
+      <div class="species-card">
+        <div class="sp-name">Romulus &amp; Remus</div>
+        <div class="sp-sci">Roman foundation myth</div>
+        <div class="sp-fact">The twin founders of Rome, suckled by a she-wolf. The Capitoline Wolf is the city's enduring symbol.</div>
+        <div class="sp-region">🏛️ Roman</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Fenrir</div>
+        <div class="sp-sci">Norse mythology</div>
+        <div class="sp-fact">The monstrous wolf prophesied to kill Odin at Ragnarök. The archetype of the wolf-as-cosmic-threat in Western canon.</div>
+        <div class="sp-region">⚔️ Norse</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Little Red Riding Hood</div>
+        <div class="sp-sci">European folklore</div>
+        <div class="sp-fact">The original Big Bad Wolf. A single fairy tale arguably did more to shape the wolf's reputation than any documentary has undone.</div>
+        <div class="sp-region">📚 Fairytale</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Direwolves</div>
+        <div class="sp-sci">A Song of Ice and Fire</div>
+        <div class="sp-fact">George R.R. Martin's reframing of the wolf as loyal-but-fearsome bonded companion. Massively popularized the species.</div>
+        <div class="sp-region">📺 Modern</div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Misrepresentation &amp; Its Real-World Cost</h3>
+    <div class="cards-grid-3">
+      <div class="info-card">
+        <div class="card-icon">🥇</div>
+        <h3>Myth 01 — "Alpha Wolves"</h3>
+        <p>The "alpha wolf" concept comes from a 1947 study of <strong>unrelated captive wolves</strong>. <strong>Mech himself has spent 50 years trying to retract the term.</strong> In wild packs, the "alpha pair" is just the breeding parents.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">⚠️</div>
+        <h3>Myth 02 — "Threat to Humans"</h3>
+        <p>Fewer than <strong>two fatal wolf attacks per decade</strong> in North America — almost all involving rabid or food-conditioned animals. Bees, cows, and dogs each kill more Americans every year.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🐄</div>
+        <h3>Myth 03 — "Devastate Livestock"</h3>
+        <p>Wolves account for <strong>less than 1% of cattle losses</strong> in U.S. ranching states. Disease, weather, and theft kill far more — but the myth drives political pressure to delist.</p>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <span class="fact-box-icon">🪞</span>
+      <div><strong>One Thing to Remember.</strong> Every cultural representation of a wolf is a representation of <em>us</em>. The fearsome predator, the noble lone wolf, the alpha — these are human anxieties projected onto an animal that, mostly, just wants to raise its pups and not run into us.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     FUN FACTS
+=================================================== -->
+<section id="facts" class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>⚡ Fun Facts</h2>
+      <p>Twelve things to drop at parties — distilled from the rest of the field guide</p>
+    </div>
+
+    <div class="behavior-grid">
+      <div class="beh-card gold-card">
+        <div class="beh-icon">🌊</div>
+        <h3>1. They turned a river around</h3>
+        <p>When wolves were reintroduced to Yellowstone in 1995, they reduced overgrazing by elk, which let willows and aspens regrow on riverbanks, which stabilized the soil, which <strong>changed the path of rivers</strong>. Ecologists call it a "trophic cascade."</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🐕</div>
+        <h3>2. Every dog is a wolf</h3>
+        <p>From a Chihuahua to a Great Dane, every domestic dog is taxonomically classified as <em>Canis lupus familiaris</em> — a subspecies of the gray wolf. Domestication began 15,000–40,000 years ago.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🚫</div>
+        <h3>3. There is no such thing as an alpha wolf</h3>
+        <p>The "alpha" concept came from a 1940s study of <strong>captive, unrelated</strong> wolves forced to live together. In a real pack, the "alpha pair" is just <em>mom and dad</em>.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">👃</div>
+        <h3>4. They can smell prey from a mile away</h3>
+        <p>Roughly <strong>200 million olfactory receptors</strong> — about 100× more than a human. Wolves can scent a herd of elk over a mile downwind.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🎶</div>
+        <h3>5. Their howl is a contagious chord</h3>
+        <p>When one wolf howls, the rest of the pack joins on intentionally different notes. The harmonic mismatch makes the pack <em>sound larger than it actually is</em>.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🏃</div>
+        <h3>6. They can run for hours</h3>
+        <p>38 mph in a sprint, but their real superpower is the cruising gait — about 5 mph, sustainable for hours. A pack tracking a moose may cover <strong>30 miles in a single night</strong>.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🐦‍⬛</div>
+        <h3>7. Ravens follow them on purpose</h3>
+        <p>Ravens have learned that wolves mean leftovers. They sometimes lead wolves to carrion they can't open themselves. One of the best-documented predator–bird working relationships.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">💞</div>
+        <h3>8. They mate for life</h3>
+        <p>Wolves form long-term pair bonds. Only the breeding pair in a pack reproduces; the rest — usually their grown offspring — helps raise the new pups.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🍼</div>
+        <h3>9. Pups are born almost helpless</h3>
+        <p>Wolf pups are born deaf, blind, and weighing about 1 lb. Within a year they're full-sized and hunting with the pack.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🤝</div>
+        <h3>10. They almost never attack humans</h3>
+        <p>In North America, fewer than two fatal wolf attacks on humans occur per decade. Bees, cows, and dogs each kill more Americans annually than wolves have in the past century combined.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">📉</div>
+        <h3>11. They were nearly wiped out</h3>
+        <p>By 1960, government bounty programs had eliminated wolves from <strong>95% of their historical range in the lower 48 U.S. states</strong>. Recovery began with the Endangered Species Act in 1973.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🎯</div>
+        <h3>12. They have a scent gland on their tail</h3>
+        <p>It's called the <strong>precaudal gland</strong> — used for individual identification and pack-marking. Yes, your dog has one too.</p>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <span class="fact-box-icon">📚</span>
+      <div><strong>Want more?</strong> Each fact above traces back to one of the other sections — browse <a href="#anatomy" style="color:var(--gold); text-decoration:underline;">Anatomy</a>, <a href="#behavior" style="color:var(--gold); text-decoration:underline;">Behavior</a>, <a href="#communication" style="color:var(--gold); text-decoration:underline;">Communication</a>, or <a href="#pop-culture" style="color:var(--gold); text-decoration:underline;">Pop Culture</a> for the full story.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     SCIENTIFIC NAME / CLASSIFICATION
+=================================================== -->
+<section id="classification" class="page-section alt-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🔭 Scientific Name &amp; Classification</h2>
+      <p>The gray wolf was named by Carl Linnaeus in 1758 — and every dog you've ever met is still classified as one of its subspecies</p>
+    </div>
+
+    <div class="taxonomy-wrap">
+      <h3 class="sub-heading">Taxonomy of the Gray Wolf</h3>
+      <div class="taxonomy-table">
+        <div class="tax-row">
+          <div class="tax-rank">Kingdom</div>
+          <div class="tax-val">Animalia</div>
+          <div class="tax-desc">All animals</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Phylum</div>
+          <div class="tax-val">Chordata</div>
+          <div class="tax-desc">Animals with a backbone</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Class</div>
+          <div class="tax-val">Mammalia</div>
+          <div class="tax-desc">Mammals</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Order</div>
+          <div class="tax-val">Carnivora</div>
+          <div class="tax-desc">Meat-eating mammals</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Family</div>
+          <div class="tax-val">Canidae</div>
+          <div class="tax-desc">The dog family — wolves, foxes, jackals, coyotes</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Genus</div>
+          <div class="tax-val">Canis</div>
+          <div class="tax-desc">True dogs and wolves</div>
+        </div>
+        <div class="tax-row highlight-row">
+          <div class="tax-rank">Species</div>
+          <div class="tax-val">Canis lupus</div>
+          <div class="tax-desc">Gray wolf · timber wolf · Linnaeus, 1758</div>
+        </div>
+      </div>
+      <p class="note" style="margin-top:1rem;"><em>Conservation status: Least Concern (IUCN, globally) — but locally endangered in many regions.</em></p>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Famous Subspecies</h3>
+    <div class="species-grid">
+      <div class="species-card">
+        <div class="sp-name">Eurasian Wolf</div>
+        <div class="sp-sci">Canis lupus lupus</div>
+        <div class="sp-fact">The "default" wolf across most of Europe and Asia.</div>
+        <div class="sp-region">🌍 Europe / Asia</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Northwestern Wolf</div>
+        <div class="sp-sci">Canis lupus occidentalis</div>
+        <div class="sp-fact">Largest subspecies — British Columbia, Alberta, Yukon, Alaska.</div>
+        <div class="sp-region">🌎 NW North America</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Great Plains Wolf</div>
+        <div class="sp-sci">Canis lupus nubilus</div>
+        <div class="sp-fact">Central Canada and the upper Midwest US.</div>
+        <div class="sp-region">🌎 Central N. America</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Mexican Wolf ("Lobo")</div>
+        <div class="sp-sci">Canis lupus baileyi</div>
+        <div class="sp-fact">Smallest North American subspecies. Recovering in Arizona, New Mexico, and northern Mexico.</div>
+        <div class="sp-region">🌎 SW USA / Mexico</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Arctic Wolf</div>
+        <div class="sp-sci">Canis lupus arctos</div>
+        <div class="sp-fact">White-coated; Canadian high Arctic and Greenland.</div>
+        <div class="sp-region">❄️ Arctic</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Indian Wolf</div>
+        <div class="sp-sci">Canis lupus pallipes</div>
+        <div class="sp-fact">Small, slender. South Asia.</div>
+        <div class="sp-region">🌏 South Asia</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Dingo</div>
+        <div class="sp-sci">Canis lupus dingo</div>
+        <div class="sp-fact">Australia. Sometimes treated as its own species (<em>Canis dingo</em>).</div>
+        <div class="sp-region">🇦🇺 Australia</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Domestic Dog</div>
+        <div class="sp-sci">Canis lupus familiaris</div>
+        <div class="sp-fact">Yes, really. Reclassified in 1993 from its own species into a subspecies of <em>Canis lupus</em>.</div>
+        <div class="sp-region">🐕 Worldwide</div>
+      </div>
+    </div>
+
+    <div class="what-makes-cobra">
+      <h3>What Makes a Wolf a "Wolf"?</h3>
+      <div class="trait-list">
+        <div class="trait"><span>🐺</span> Member of the genus <em>Canis</em>, family <em>Canidae</em></div>
+        <div class="trait"><span>👨‍👩‍👧‍👦</span> Lives in cooperative family packs led by a breeding pair</div>
+        <div class="trait"><span>📣</span> Communicates via howls, scent marks, posture, and touch</div>
+        <div class="trait"><span>🏃</span> Cursorial predator — hunts large prey by running them down</div>
+      </div>
+      <p class="note"><em>"Wait — dogs are wolves?" Technically: yes. The domestic dog was reclassified in 1993 into a subspecies of <em>Canis lupus</em>, on the basis that dogs and wolves can interbreed and produce fertile offspring, and that genetic evidence places dogs squarely inside the wolf family tree. Your golden retriever and a Yukon timber wolf share more recent common ancestry than you and a chimp.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     FOOTER
+=================================================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">🐺 Wolf World &middot; Wild Nation</div>
+    <p>The wolf exhibit at Wild Nation Zoo &mdash; a fan field guide to <em>Canis lupus</em></p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#diet">Diet</a>
+      <a href="#mating">Mating</a>
+      <a href="#habitat">Habitat</a>
+      <a href="#behavior">Behavior</a>
+      <a href="#communication">Communication</a>
+      <a href="#anatomy">Anatomy</a>
+      <a href="#pop-culture">Pop Culture</a>
+      <a href="#facts">Fun Facts</a>
+      <a href="#classification">Classification</a>
+    </div>
+    <a href="file:///Users/lsondhi/zoo-boilerplate/index.html" class="zoo-back-footer">← Back to Wild Nation Zoo</a>
+    <p class="footer-warning" style="margin-top:1.25rem !important;">⚠️ <strong>Safety Reminder:</strong> Never approach a wild wolf. Admire them safely from a distance — or right here on this website!</p>
+    <p style="font-size:0.78rem; margin-top:0.6rem;">© 2026 Wild Nation · SCRUM Wolves · Built by the pack</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

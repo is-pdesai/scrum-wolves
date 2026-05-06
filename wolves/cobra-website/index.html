@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cobra World — Learn About Cobras!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="nav-brand">
+    <span>🐍</span>
+    <span>Cobra World</span>
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home"           class="nav-link">Home</a></li>
+    <li><a href="#gallery"        class="nav-link">Gallery</a></li>
+    <li><a href="#diet"           class="nav-link">Diet</a></li>
+    <li><a href="#mating"         class="nav-link">Mating &amp; Reprod.</a></li>
+    <li><a href="#habitat"        class="nav-link">Habitat</a></li>
+    <li><a href="#behavior"       class="nav-link">Behavior</a></li>
+    <li><a href="#anatomy"        class="nav-link">Anatomy &amp; Biology</a></li>
+    <li><a href="#classification" class="nav-link">Classification</a></li>
+  </ul>
+</nav>
+
+<!-- ===================================================
+     HOME
+=================================================== -->
+<section id="home" class="page-section home-section">
+  <div class="container">
+    <div class="hero-content">
+      <div class="badge">🌍 Found on 4 Continents</div>
+      <h1>Welcome to<br><span class="grad-text">Cobra World</span></h1>
+      <p class="hero-sub">
+        Discover one of nature's most fascinating and misunderstood animals — the cobra.
+        From their deadly venom to their iconic hood, cobras are truly one of a kind!
+      </p>
+      <a href="#gallery" class="btn">Start Exploring 🚀</a>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-num" data-target="28">0</div>
+        <div class="stat-label">Cobra Species<br><em>(Naja genus)</em></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="18">0</div>
+        <div class="stat-unit">feet</div>
+        <div class="stat-label">King Cobra max length</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="4">0</div>
+        <div class="stat-label">Continents<br>they live on</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" data-target="8">0</div>
+        <div class="stat-unit">feet</div>
+        <div class="stat-label">Max venom spit distance</div>
+      </div>
+    </div>
+
+    <div class="fact-banner">
+      <span class="fact-label">⚡ DID YOU KNOW?</span>
+      <span class="fact-text" id="factText">King Cobras are the only snakes in the world that build a nest!</span>
+    </div>
+
+    <!-- Quick-nav cards -->
+    <div class="quicknav">
+      <a href="#diet"    class="qn-card"><div class="qn-icon">🍽️</div><div>Diet &amp; Hunting</div></a>
+      <a href="#mating"  class="qn-card"><div class="qn-icon">🥚</div><div>Mating &amp; Eggs</div></a>
+      <a href="#habitat" class="qn-card"><div class="qn-icon">🌍</div><div>Where They Live</div></a>
+      <a href="#behavior"class="qn-card"><div class="qn-icon">🪬</div><div>Behavior</div></a>
+      <a href="#anatomy" class="qn-card"><div class="qn-icon">🔬</div><div>Anatomy</div></a>
+      <a href="#classification" class="qn-card"><div class="qn-icon">🔭</div><div>Classification</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     IMAGE GALLERY
+=================================================== -->
+<section id="gallery" class="page-section alt-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🖼️ Image Gallery</h2>
+      <p>Meet the different species of cobras from around the world</p>
+    </div>
+    <div class="gallery-grid">
+
+      <!-- Each card: img tries Wikipedia URL. On any error → CSS illustrated fallback card. -->
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="🐍" data-sci="Naja naja" data-region="South Asia" style="--grad:linear-gradient(145deg,#0d2b0d,#1b5e20)">
+          <img src="/Users/lsondhi/cobra-website/images/indian_cobra.jpeg"
+               alt="Indian Cobra with hood spread"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Naja naja</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Indian Cobra</h3>
+          <p>One of Asia's "Big Four" deadly snakes. Famous for spectacle-shaped hood markings!</p>
+          <span class="tag">South Asia</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="👑" data-sci="Ophiophagus hannah" data-region="Southeast Asia" style="--grad:linear-gradient(145deg,#3e2700,#7a5000)">
+          <img src="/Users/lsondhi/cobra-website/images/king_cobra.jpg"
+               alt="King Cobra"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Ophiophagus hannah</span></div>
+        </div>
+        <div class="card-body">
+          <h3>King Cobra</h3>
+          <p>The world's longest venomous snake — up to 18 feet! It eats other snakes for dinner.</p>
+          <span class="tag">Southeast Asia</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="🏺" data-sci="Naja haje" data-region="North Africa" style="--grad:linear-gradient(145deg,#3d2e00,#7b6200)">
+          <img src="/Users/lsondhi/cobra-website/images/Egyptian_Cobra.jpeg"
+               alt="Egyptian Cobra"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Naja haje</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Egyptian Cobra</h3>
+          <p>The cobra of the pharaohs! Ancient Egyptians used it as a symbol of power and royalty.</p>
+          <span class="tag">North Africa</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="⭕" data-sci="Naja kaouthia" data-region="Southeast Asia" style="--grad:linear-gradient(145deg,#002b2b,#005757)">
+          <img src="/Users/lsondhi/cobra-website/images/Monocled_Cobra.jpeg"
+               alt="Monocled Cobra"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Naja kaouthia</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Monocled Cobra</h3>
+          <p>Named for its single "O"-shaped hood ring. One of the deadliest in Southeast Asia.</p>
+          <span class="tag">Southeast Asia</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="👁️" data-sci="Naja naja" data-region="India" style="--grad:linear-gradient(145deg,#12260d,#2e5c20)">
+          <img src="/Users/lsondhi/cobra-website/images/Close-Up_Look.jpg"
+               alt="Cobra face close-up"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Naja naja</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Close-Up Look</h3>
+          <p>Notice the unblinking stare — cobras have no eyelids! A transparent scale covers each eye.</p>
+          <span class="tag">India</span>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <div class="img-wrap" data-emoji="💦" data-sci="Naja siamensis" data-region="Southeast Asia" style="--grad:linear-gradient(145deg,#2b0a00,#5c2200)">
+          <img src="/Users/lsondhi/cobra-website/images/Spitting_Cobra.jpeg"
+               alt="Indochinese Spitting Cobra"
+               onerror="this.onerror=null;this.parentElement.classList.add('img-fallback');" />
+          <div class="img-overlay"><span>Naja siamensis</span></div>
+        </div>
+        <div class="card-body">
+          <h3>Spitting Cobra</h3>
+          <p>Can spit venom with sniper accuracy — targeting eyes from up to 8 feet away!</p>
+          <span class="tag">Southeast Asia</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     DIET
+=================================================== -->
+<section id="diet" class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🍽️ Diet &amp; Hunting</h2>
+      <p>What does a cobra eat — and how does it catch its prey?</p>
+    </div>
+
+    <h3 class="sub-heading">What Cobras Eat</h3>
+    <div class="food-grid">
+      <div class="food-card">
+        <div class="food-icon">🐭</div>
+        <h4>Rodents</h4>
+        <p>Mice, rats, and other small mammals are a staple meal for most cobra species.</p>
+      </div>
+      <div class="food-card">
+        <div class="food-icon">🐸</div>
+        <h4>Frogs &amp; Toads</h4>
+        <p>Amphibians are easy prey near ponds and rice paddies.</p>
+      </div>
+      <div class="food-card">
+        <div class="food-icon">🐦</div>
+        <h4>Birds &amp; Eggs</h4>
+        <p>Small birds and eggs raided from nests are a tasty bonus meal.</p>
+      </div>
+      <div class="food-card">
+        <div class="food-icon">🦎</div>
+        <h4>Lizards</h4>
+        <p>Various lizard species are a common part of a cobra's diet.</p>
+      </div>
+      <div class="food-card gold-card">
+        <div class="food-icon">🐍</div>
+        <h4>Other Snakes!</h4>
+        <p>King Cobras are <strong>ophiophagous</strong> — snake-eaters. They even tackle venomous pythons!</p>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">How Cobras Hunt</h3>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>👅 Detect with Tongue</h4>
+          <p>Cobras flick their forked tongue to "smell" the air, detecting prey from hundreds of metres away using their Jacobson's organ.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>🥷 Ambush or Stalk</h4>
+          <p>Some cobras lie in wait; others actively track prey using heat, scent trails, and movement.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>💉 Strike &amp; Inject Venom</h4>
+          <p>They strike fast, biting and injecting neurotoxic venom through hollow fangs. The venom attacks the nervous system, causing paralysis.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h4>🍽️ Swallow Whole</h4>
+          <p>Once prey is paralysed, the cobra swallows it headfirst and whole. Their flexible jaw unhinges to fit meals larger than their head!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <span class="fact-box-icon">⚡</span>
+      <div><strong>Super Cool Fact!</strong> After one big meal, a cobra can go <em>weeks or even months</em> without eating again. They have an incredibly slow metabolism!</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     MATING & REPRODUCTION
+=================================================== -->
+<section id="mating" class="page-section alt-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🥚 Mating &amp; Reproduction</h2>
+      <p>How baby cobras come into the world</p>
+    </div>
+    <div class="cards-grid-3">
+      <div class="info-card">
+        <div class="card-icon">💑</div>
+        <h3>Finding a Mate</h3>
+        <p>Male cobras compete for females by wrestling — they push and try to pin each other down. No biting allowed! The winner earns the right to mate.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">📅</div>
+        <h3>Mating Season</h3>
+        <p>Indian cobras mate between January and April. King Cobras mate January to March. Males can sense female pheromones from huge distances.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🥚</div>
+        <h3>Laying Eggs</h3>
+        <p>Cobras are <strong>oviparous</strong> — egg layers! A female lays between 10 and 45 eggs at a time, depending on the species.</p>
+      </div>
+      <div class="info-card gold-card">
+        <div class="card-icon">🏠</div>
+        <h3>The King's Nest ⭐</h3>
+        <p><strong>King Cobras are unique!</strong> They are the ONLY snake species that builds a nest — pushing leaves and twigs into a mound — then guards it fiercely until the eggs hatch.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">⏱️</div>
+        <h3>Incubation</h3>
+        <p>Cobra eggs take <strong>60–80 days</strong> to hatch. The mother stays close to keep eggs warm. She leaves just before hatching so she doesn't eat her own young!</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon">🐍</div>
+        <h3>Baby Cobras (Hatchlings)</h3>
+        <p>Baby cobras are completely independent from birth — and <strong>fully venomous from day one</strong>. A newborn cobra can already spread its hood and deliver a dangerous bite!</p>
+      </div>
+    </div>
+    <div class="fact-box">
+      <span class="fact-box-icon">🤯</span>
+      <div><strong>Mind-Blowing!</strong> Baby cobras are venomous the moment they crack out of the egg — there's zero learning period. They are born ready!</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     HABITAT
+=================================================== -->
+<section id="habitat" class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🌍 Habitat Info</h2>
+      <p>Where in the world do cobras live?</p>
+    </div>
+
+    <h3 class="sub-heading">Regions of the World</h3>
+    <div class="regions-grid">
+      <div class="region-card">
+        <div class="region-icon">🌏</div>
+        <h3>South Asia</h3>
+        <p>India, Pakistan, Sri Lanka, Bangladesh, Nepal</p>
+        <p class="region-note"><em>Home of the famous Indian Cobra</em></p>
+        <div class="env-tags">
+          <span class="tag">🌾 Farmland</span>
+          <span class="tag">🏘️ Villages</span>
+          <span class="tag">🌳 Forests</span>
+        </div>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">🌏</div>
+        <h3>Southeast Asia</h3>
+        <p>Thailand, Vietnam, Indonesia, Philippines, Myanmar</p>
+        <p class="region-note"><em>Habitat of the King Cobra and spitting cobras</em></p>
+        <div class="env-tags">
+          <span class="tag">🌿 Rainforest</span>
+          <span class="tag">🏔️ Hills</span>
+          <span class="tag">🌾 Rice paddies</span>
+        </div>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">🌍</div>
+        <h3>Africa</h3>
+        <p>Egypt, South Africa, East Africa, West Africa</p>
+        <p class="region-note"><em>Egyptian, Cape, and Forest cobras</em></p>
+        <div class="env-tags">
+          <span class="tag">🏜️ Desert edges</span>
+          <span class="tag">🌿 Savanna</span>
+          <span class="tag">🌳 Woodland</span>
+        </div>
+      </div>
+      <div class="region-card">
+        <div class="region-icon">🌐</div>
+        <h3>Middle East</h3>
+        <p>Parts of the Arabian Peninsula and surrounding areas</p>
+        <p class="region-note"><em>Some species extend into arid zones</em></p>
+        <div class="env-tags">
+          <span class="tag">🌵 Arid zones</span>
+          <span class="tag">🏜️ Desert</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Types of Environments</h3>
+    <div class="env-list">
+      <div class="env-item">
+        <span class="env-icon">🌿</span>
+        <div>
+          <h4>Tropical Rainforests</h4>
+          <p>Dense, humid forests with rich biodiversity — perfect for King Cobras who hunt large prey.</p>
+        </div>
+      </div>
+      <div class="env-item">
+        <span class="env-icon">🌾</span>
+        <div>
+          <h4>Agricultural Land &amp; Rice Paddies</h4>
+          <p>Many cobras live near farmland where rodents are plentiful. This often brings them into contact with humans.</p>
+        </div>
+      </div>
+      <div class="env-item">
+        <span class="env-icon">🏜️</span>
+        <div>
+          <h4>Grasslands &amp; Scrublands</h4>
+          <p>Open areas offer warmth and plenty of small prey. Cobras bask in the sun to warm their bodies.</p>
+        </div>
+      </div>
+      <div class="env-item">
+        <span class="env-icon">🏘️</span>
+        <div>
+          <h4>Near Human Settlements</h4>
+          <p>Indian cobras are surprisingly comfortable near villages and towns — wherever there are rats, a cobra might follow!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <span class="fact-box-icon">🌡️</span>
+      <div><strong>Cold-Blooded!</strong> Cobras are <em>ectotherms</em> — they rely on the sun to regulate body temperature. That's why you often spot them basking on warm rocks or open ground in the morning.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     BEHAVIOR
+=================================================== -->
+<section id="behavior" class="page-section alt-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🐍 Behavior</h2>
+      <p>How cobras act, defend themselves, and interact with their world</p>
+    </div>
+    <div class="behavior-grid">
+      <div class="beh-card">
+        <div class="beh-icon">🪬</div>
+        <h3>The Hood Spread</h3>
+        <p>When threatened, a cobra lifts its front body off the ground and fans its hood by spreading its elongated neck ribs. The message is clear: <em>"Back off — or else!"</em></p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">📢</div>
+        <h3>Hissing</h3>
+        <p>Cobras force air out of their lungs to produce a loud hiss. The King Cobra's hiss is so deep it sounds like a dog's growl — very different from other snakes!</p>
+      </div>
+      <div class="beh-card gold-card">
+        <div class="beh-icon">💦</div>
+        <h3>Venom Spitting ⭐</h3>
+        <p>Spitting cobras fire venom with sniper-like accuracy — targeting a predator's eyes from up to 8 feet away! It causes intense pain and can cause blindness if not washed out quickly.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🌙</div>
+        <h3>Activity Patterns</h3>
+        <p>Most cobras are <strong>crepuscular</strong> — most active at dawn and dusk. Some are daytime hunters, others prefer the cool of night, depending on the species and weather.</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🧍</div>
+        <h3>Solitary Animals</h3>
+        <p>Cobras prefer to live alone. They only come together to mate. Two cobras in the same area will generally avoid each other — unless one is a King Cobra looking for lunch!</p>
+      </div>
+      <div class="beh-card">
+        <div class="beh-icon">🎵</div>
+        <h3>Snake Charming — The Truth!</h3>
+        <p>Cobras cannot hear music — they're nearly deaf to airborne sound! They follow the <em>movement</em> of the charmer's flute, not the music. It's all about the sway, not the tune!</p>
+      </div>
+    </div>
+    <div class="fact-box">
+      <span class="fact-box-icon">👁️</span>
+      <div><strong>No Eyelids!</strong> Cobras never blink. A transparent scale called a <em>brille</em> (German for "spectacles") covers each eye, giving them their famous intense, unblinking stare.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     ANATOMY & BIOLOGY
+=================================================== -->
+<section id="anatomy" class="page-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🔬 Anatomy &amp; Biology</h2>
+      <p>What's inside and outside a cobra — and how it all works</p>
+    </div>
+
+    <!-- Visual Snake Diagram -->
+    <div class="snake-diagram-box">
+      <div class="diagram-label left">
+        <strong>Head</strong><br>
+        <small>Brain, venom glands,<br>Jacobson's organ, fangs</small>
+      </div>
+      <div class="snake-art">
+        <span class="snake-emoji">🐍</span>
+        <div class="snake-line">
+          <div class="snake-seg" title="Neck — elongated ribs form the hood">NECK / HOOD</div>
+          <div class="snake-seg" title="Torso — houses long stomach and organs">TORSO</div>
+          <div class="snake-seg tail-seg" title="Tail — shorter in females">TAIL</div>
+        </div>
+      </div>
+      <div class="diagram-label right">
+        <strong>Tail</strong><br>
+        <small>Shorter in females,<br>helps balance &amp; climbing</small>
+      </div>
+    </div>
+
+    <div class="anatomy-grid">
+      <div class="anatomy-card">
+        <div class="a-icon">👅</div>
+        <h3>Forked Tongue</h3>
+        <p>Picks up scent particles from the air and transfers them to the <strong>Jacobson's organ</strong> in the roof of the mouth. The two tips tell the cobra which direction the smell is coming from!</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">🪬</div>
+        <h3>The Hood</h3>
+        <p>Formed by elongated neck ribs that fan outward under the skin. When relaxed, you can't even see it — but the cobra can spread it in less than a second!</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">💉</div>
+        <h3>Venom System</h3>
+        <p>Venom glands sit behind the eyes. When the cobra bites, jaw muscles squeeze the glands, forcing venom through hollow fangs. Cobra venom is mainly <strong>neurotoxic</strong> — it paralyses the nervous system.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">👁️</div>
+        <h3>Eyes &amp; The Brille</h3>
+        <p>Instead of eyelids, each eye is covered by a transparent scale called a <strong>brille</strong>. Cobras cannot blink or close their eyes. Their vision is tuned to detect movement rather than fine detail.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">🦷</div>
+        <h3>Flexible Jaws</h3>
+        <p>The lower jaw is connected by a stretchy ligament — not fused like in humans. This lets cobras swallow prey far wider than their own head! Both halves of the jaw move independently.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">🐾</div>
+        <h3>Scales &amp; Skin Shedding</h3>
+        <p>Scales are made of keratin — the same material as your fingernails! Cobras shed their entire skin as they grow. Just before shedding (<strong>ecdysis</strong>), their eyes turn cloudy blue.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">📏</div>
+        <h3>Size</h3>
+        <p>Most cobras: 4–6 feet. The King Cobra holds the record — the longest ever measured was <strong>18.8 feet (5.7 m)</strong>! King Cobras can raise the front third of their body and look a person in the eye.</p>
+      </div>
+      <div class="anatomy-card">
+        <div class="a-icon">❤️</div>
+        <h3>Internal Organs</h3>
+        <p>All organs are long and narrow to fit the snake's shape. Cobras have a <strong>3-chambered heart</strong>, mostly one functional lung, and ribs running nearly the full length of their body!</p>
+      </div>
+    </div>
+
+    <div class="fact-box">
+      <span class="fact-box-icon">🔄</span>
+      <div><strong>Shedding Season!</strong> Young, fast-growing cobras can shed their skin every few weeks. Adults shed a few times per year. The shed skin comes off in one complete piece — including the eye covers!</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     SCIENTIFIC NAME / CLASSIFICATION
+=================================================== -->
+<section id="classification" class="page-section alt-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>🔭 Scientific Name &amp; Classification</h2>
+      <p>How scientists classify cobras in the animal kingdom</p>
+    </div>
+
+    <div class="taxonomy-wrap">
+      <h3 class="sub-heading">Taxonomy of the Indian Cobra</h3>
+      <div class="taxonomy-table">
+        <div class="tax-row">
+          <div class="tax-rank">Kingdom</div>
+          <div class="tax-val">Animalia</div>
+          <div class="tax-desc">All animals</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Phylum</div>
+          <div class="tax-val">Chordata</div>
+          <div class="tax-desc">Animals with a backbone</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Class</div>
+          <div class="tax-val">Reptilia</div>
+          <div class="tax-desc">Reptiles</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Order</div>
+          <div class="tax-val">Squamata</div>
+          <div class="tax-desc">Scaled reptiles — snakes &amp; lizards</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Family</div>
+          <div class="tax-val">Elapidae</div>
+          <div class="tax-desc">Venomous snakes with fixed front fangs</div>
+        </div>
+        <div class="tax-row">
+          <div class="tax-rank">Genus</div>
+          <div class="tax-val">Naja</div>
+          <div class="tax-desc">True cobras — 28+ species</div>
+        </div>
+        <div class="tax-row highlight-row">
+          <div class="tax-rank">Species</div>
+          <div class="tax-val">Naja naja</div>
+          <div class="tax-desc">Indian Cobra / Spectacled Cobra</div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-heading" style="margin-top:2.5rem;">Famous Cobra Species</h3>
+    <div class="species-grid">
+      <div class="species-card">
+        <div class="sp-name">King Cobra</div>
+        <div class="sp-sci">Ophiophagus hannah</div>
+        <div class="sp-fact">World's longest venomous snake — 18 feet max!</div>
+        <div class="sp-region">🌏 Southeast Asia</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Indian Cobra</div>
+        <div class="sp-sci">Naja naja</div>
+        <div class="sp-fact">The classic snake charmer cobra, with spectacle hood markings</div>
+        <div class="sp-region">🌏 South Asia</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Egyptian Cobra</div>
+        <div class="sp-sci">Naja haje</div>
+        <div class="sp-fact">Largest cobra in Africa. Symbol of the pharaohs</div>
+        <div class="sp-region">🌍 North Africa</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Monocled Cobra</div>
+        <div class="sp-sci">Naja kaouthia</div>
+        <div class="sp-fact">Single "O" ring marking on its hood</div>
+        <div class="sp-region">🌏 Southeast Asia</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Mozambique Spitting Cobra</div>
+        <div class="sp-sci">Naja mossambica</div>
+        <div class="sp-fact">Spits venom up to 8 feet with deadly accuracy</div>
+        <div class="sp-region">🌍 East Africa</div>
+      </div>
+      <div class="species-card">
+        <div class="sp-name">Cape Cobra</div>
+        <div class="sp-sci">Naja nivea</div>
+        <div class="sp-fact">Considered the most dangerous cobra in Africa</div>
+        <div class="sp-region">🌍 South Africa</div>
+      </div>
+    </div>
+
+    <div class="what-makes-cobra">
+      <h3>What Makes a Snake a "Cobra"?</h3>
+      <div class="trait-list">
+        <div class="trait"><span>🪬</span> Can spread a hood when threatened</div>
+        <div class="trait"><span>💉</span> Member of the Elapidae family (fixed front fangs)</div>
+        <div class="trait"><span>☠️</span> Produces potent, mainly neurotoxic venom</div>
+        <div class="trait"><span>🌡️</span> Cold-blooded (ectotherm) reptile</div>
+      </div>
+      <p class="note"><em>Note: "Cobra" is a common name, not a strict scientific category. King Cobras belong to a different genus (Ophiophagus) but are still called cobras because of their hood-spreading ability and Elapidae family membership.</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     FOOTER
+=================================================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">🐍 Cobra World</div>
+    <p>An educational resource for young learners &mdash; created for 12-year-old students</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#diet">Diet</a>
+      <a href="#mating">Mating</a>
+      <a href="#habitat">Habitat</a>
+      <a href="#behavior">Behavior</a>
+      <a href="#anatomy">Anatomy</a>
+      <a href="#classification">Classification</a>
+    </div>
+    <p class="footer-warning">⚠️ <strong>Safety Reminder:</strong> Never approach a wild cobra. Admire them safely from a distance — or right here on this website!</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
